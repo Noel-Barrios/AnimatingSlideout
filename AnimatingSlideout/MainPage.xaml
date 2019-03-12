@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage BackgroundColor="Silver" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AnimatingSlideout" x:Class="AnimatingSlideout.MainPage">
-    <!--<StackLayout Margin="0" >
-        <Button Text="Add New" Margin="0,50,0,0" BackgroundColor="White" x:Name="addNewBtn" Clicked="OnAddNewBtnClicked" HorizontalOptions="EndAndExpand" ></Button>
 
-        <ContentView x:Name="slideOutContentView" IsVisible="false"  BackgroundColor="#becedb" Margin="0" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
-            <StackLayout Margin="0,10,0,10" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="EndAndExpand">
-                <Editor Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Editor>
-                <Editor Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Editor>
-            </StackLayout>
-        </ContentView>
+    <!--version 1 (a stacklayout implementaiton)-->
+    <!--<StackLayout Orientation="Vertical" Padding="0, 20">
+        <Button Text="Add New" x:Name="addNewbtn" Clicked="OnAddNewBtnClicked" IsEnabled="true" HorizontalOptions="End"></Button>
+        <ScrollView x:Name="slideOutScrollView" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+            <Label  Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Label>
+        </ScrollView>
     </StackLayout>-->
     
-    <Button Text="dksafjsdkjfklasdjf;" HorizontalOptions="End"></Button>
-    <Label Text="aldfjaskldjfklsadjflaksjdflsaj"></Label>
-    
-    
-    <AbsoluteLayout HorizontalOptions="End">
-    <StackLayout AbsoluteLayout.LayoutFlags="PositionProportional">
-         <Button Text="Add New" Margin="0,50,0,0" BackgroundColor="White" x:Name="addNewBtn" Clicked="OnAddNewBtnClicked" HorizontalOptions="EndAndExpand" ></Button>
-    </StackLayout>
-
-    <AbsoluteLayout x:Name="Abs" AbsoluteLayout.LayoutFlags="PositionProportional" >
-        <ContentView x:Name="slideOutContentView" IsVisible="false"  BackgroundColor="#becedb" Margin="0" VerticalOptions="Start" HorizontalOptions="EndAndExpand">
-            <StackLayout Margin="0,10,0,10" Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="EndAndExpand">
-                <Editor Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Editor>
-                <Editor Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Editor>
-            </StackLayout>
-        </ContentView>
-    </AbsoluteLayout>
-</AbsoluteLayout>
+    <!--version 2 (identical to above but with a Grid)-->
+    <Grid x:Name="grid" Padding="0,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />  
+        </Grid.ColumnDefinitions>
+        
+        <Button Text="Add New" x:Name="addNewbtn" Clicked="OnAddNewBtnClicked" IsEnabled="true" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="0" HorizontalOptions="End"></Button>
+        <ScrollView x:Name="slideOutScrollView" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="1" VerticalOptions="FillAndExpand" >
+            <Label  Text="Diffugere  nives, redeunt iam gramina campisarboribusque comae; mut at terra vices et decrescentia  ripas flumina praetereunt; Gratia  cum Nymphis geminisque sororibus audet ducere nuda choros. Inmortalia ne speres, monet annus et almum quae rapit hora diem. Frigora mitescunt zephyris, ver proterit aesta interitura, simul pomifer autumnus fruges effuderit, et mox bruma recurrit iners. Damna tamen celeres reparant caelestia lunae; nos ubi decidimus, quo pius Aeneas, quo Tullus dives et Ancus, pulvis et umbra sumus. Quis scit an adiciant hodiernae crastina summae tempora di superi? Cuncta manus avidas fugient heredis, amico quae dederis animo. Cum semel occideris et de te splendida Minos fecerit arbitria, non, Torquate, genus, non te facundia, non te restituet pietas; Infernis neque enim tenebris Diana pudicum liberat Hippolytum, nec Lethaea valet Theseus abrumpere caro vincula Pirithoo." ></Label>
+        </ScrollView>
+        
+    </Grid>
 </ContentPage>
